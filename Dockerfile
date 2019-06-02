@@ -8,7 +8,7 @@ RUN apt-get update \
 WORKDIR /home/omnicore
 
 RUN git clone https://github.com/OmniLayer/omnicore.git . \
-    && git checkout v0.4.0
+    && git checkout v0.5.0
 
 RUN ./autogen.sh \
     && ./configure --with-incompatible-bdb \
